@@ -1,0 +1,6 @@
+MEMORY
+{
+FLASH ( rx ) : ORIGIN = 0 x08000000 , LENGTH = 64 K
+RAM ( xrw ) : ORIGIN = 0 x20000000 , LENGTH = 20 K
+}
+_esstack = ORIGIN ( RAM ) + LENGTH ( RAM ) ;
